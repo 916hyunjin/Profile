@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연구자 프로필 - 박현진</title>
+    <style>
+        body {
+            font-family: 'Pretendard', 'Nanum Myeongjo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            color: #222222;
+            background-color: #ffffff;
+            line-height: 1.75;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 2px solid #333333;
+            padding-bottom: 18px;
+            margin-bottom: 30px;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            color: #111111;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+
+        .title-degree {
+            font-size: 16px;
+            font-weight: normal;
+            color: #555555;
+            margin-left: 6px;
+        }
+
+        .title-affiliation {
+            font-size: 14.5px;
+            color: #444444;
+            font-weight: 600;
+            text-align: right;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: #2b547e;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #555555;
+            border-top: 1px dotted #ccc;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+
+        .contact-info a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #111111;
+            border-bottom: 1px solid #111111;
+            padding-bottom: 6px;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .exp-list li {
+            position: relative;
+            padding-left: 14px;
+            margin-bottom: 8px;
+            font-size: 14.5px;
+        }
+
+        .exp-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #444444;
+        }
+
+        .focus-box {
+            background-color: #f9f9f9;
+            border: 1px solid #e5e5e5;
+            padding: 14px 18px;
+            font-size: 14px;
+        }
+
+        .focus-box li {
+            margin-bottom: 6px;
+            position: relative;
+            padding-left: 14px;
+        }
+
+        .focus-box li:last-child {
+            margin-bottom: 0;
+        }
+
+        .focus-box li::before {
+            content: "-";
+            position: absolute;
+            left: 0;
+            color: #666666;
+        }
+
+        .paper-item {
+            margin-bottom: 11px;
+            padding-left: 26px;
+            position: relative;
+            font-size: 14px;
+            word-break: keep-all;
+        }
+
+        .paper-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: 600;
+            color: #555555;
+            font-size: 13px;
+        }
+
+        .paper-date {
+            color: #666666;
+            font-size: 13px;
+            margin-right: 4px;
+        }
+
+        .paper-title {
+            color: #111111;
+        }
+
+        .paper-journal {
+            color: #666666;
+            font-size: 13px;
+        }
+
+        .sub-text {
+            font-size: 13px;
+            color: #666666;
+            display: block;
+            margin-top: 1px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 12px;
+            color: #888888;
+            border-top: 1px solid #eeeeee;
+            padding-top: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 15px;
+            }
+            .header-top {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+            .title-affiliation {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-top">
+            <h1>박 현 진 <span class="title-degree">(Park, Hyun Jin, Ph.D.)</span></h1>
+            <div class="title-affiliation">한국음악교육공학회 감사이사</div>
+        </div>
+        <div class="subtitle">한양대학교 대학원 교육학 박사 (교육과정 전공) · AIED & 에듀테크 교육과정 연구자</div>
+        <div class="contact-info">
+            <strong>이메일:</strong> <a href="mailto:916hyunjin@naver.com">916hyunjin@naver.com</a> &nbsp;|&nbsp; 
+            <strong>연락처:</strong> <a href="tel:010-4518-1800">010-4518-1800</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>출강 및 교육 경력</h2>
+        <ul class="exp-list">
+            <li><strong>서울교육대학교</strong> 출강 (음악교육)</li>
+            <li><strong>아주대학교</strong> 출강 (교육과정)</li>
+            <li><strong>상명대학교 · 가천대학교 · 한양대학교</strong> 강사 역임</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>주요 연구 분야 (Research Focus)</h2>
+        <div class="focus-box">
+            <ul>
+                <li><strong>교육과정 및 수업설계:</strong> 백워드(UbD) 디자인, ADDIE, ASSURE, 협동학습 모형 기반 교육과정 개발</li>
+                <li><strong>AIED & 에듀테크:</strong> 생성형 AI 및 메타버스 환경 기반 교육 설계, CBAM 관심단계 진단 및 분석</li>
+                <li><strong>연구 방법론:</strong> 자서전적 연구 등 질적 연구, 양적 통계 분석, 혼합연구(Mixed Methods Research)</li>
+                <li><strong>교사교육:</strong> 예비교사 및 현직교사 전문성 개발 및 재교육 프로그램 개발</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>학위 논문 (Thesis & Dissertation)</h2>
+        <ul class="exp-list">
+            <li>
+                <strong>2020. 02 | 아츠 프로펠을 적용한 중학교 음악과 프로그램 개발 및 효과성 연구</strong>
+                <span class="sub-text">한양대학교 박사학위 논문 (교육학 박사 / 교육과정 전공)</span>
+            </li>
+            <li>
+                <strong>2010. 02 | 20세기 디지털 매체를 활용한 창작학습 지도 방안</strong>
+                <span class="sub-text">경희대학교 석사학위 논문 (교육학 석사 / 음악교육 전공)</span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>수상 및 장학 (Awards & Fellowships)</h2>
+        <ul class="exp-list">
+            <li><strong>2009 | 성적우수 장학금 (Academic Excellence Scholarship)</strong> <span class="sub-text">경희대학교 교육대학원</span></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>KCI 학술지 게재 논문</h2>
+        <ul>
+            <li class="paper-item">
+                <span class="paper-num">01.</span>
+                <span class="paper-date">[2026.10.16]</span>
+                <span class="paper-title">자서전적 글쓰기에 나타난 초등교사의 음악 AIED 교사재교육 경험 분석</span>
+                <span class="paper-journal">(음악교육공학, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">02.</span>
+                <span class="paper-date">[2026.04.16]</span>
+                <span class="paper-title">CBAM을 기반한 초등교사의 음악 AIED 관심 단계 진단 도구 개발 및 분석</span>
+                <span class="paper-journal">(음악교육공학, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">03.</span>
+                <span class="paper-date">[2026.01.31]</span>
+                <span class="paper-title">AIED 예비교사 인식 프로그램 설계 및 경험 분석</span>
+                <span class="paper-journal">(디지털콘텐츠학회논문지, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">04.</span>
+                <span class="paper-date">[2025.04.16]</span>
+                <span class="paper-title">ADDIE 모형을 활용한 음악 인공지능 기반 초등교사 교육 프로그램 개발</span>
+                <span class="paper-journal">(음악교육공학, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">05.</span>
+                <span class="paper-date">[2024.10.16]</span>
+                <span class="paper-title">메타버스와 인공지능을 반영한 최신 음악교육매체 기반 예비교사 교육과정 적용 및 경험 탐색</span>
+                <span class="paper-journal">(음악교육공학, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">06.</span>
+                <span class="paper-date">[2024.04.16]</span>
+                <span class="paper-title">UbD의 백워드 디자인을 적용한 예비교사 음악교육매체 교육과정 개발</span>
+                <span class="paper-journal">(음악교육공학, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">07.</span>
+                <span class="paper-date">[2024.03.11]</span>
+                <span class="paper-title">메타버스 기반 교육과정의 예비교사 경험 탐구</span>
+                <span class="paper-journal">(교육과정연구, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">08.</span>
+                <span class="paper-date">[2023.10.30]</span>
+                <span class="paper-title">가상현실 기반 예비교사 에듀테크 프로그램 개발 및 적용</span>
+                <span class="paper-journal">(문화와 융합, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">09.</span>
+                <span class="paper-date">[2023.06.04]</span>
+                <span class="paper-title">메타버스 활용 음악수업에 대한 예비음악교사의 인식 및 경험</span>
+                <span class="paper-journal">(한국예술교육학회, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">10.</span>
+                <span class="paper-date">[2023.04.16]</span>
+                <span class="paper-title">ASSURE 모형을 적용한 에듀테크 초등 음악 창작 프로그램 개발</span>
+                <span class="paper-journal">(음악교육공학, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">11.</span>
+                <span class="paper-date">[2023.03.30]</span>
+                <span class="paper-title">메타버스를 활용한 자율적 협동학습 모형 기반 음악과 프로그램 개발 - 2022 개정 교육과정 중심으로 -</span>
+                <span class="paper-journal">(문화와 융합, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">12.</span>
+                <span class="paper-date">[2023.03.13]</span>
+                <span class="paper-title">백워드 모형을 활용한 에듀테크-메타버스 기반 예비교사 교육 프로그램 개발 및 적용</span>
+                <span class="paper-journal">(교육과정연구, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">13.</span>
+                <span class="paper-date">[2021.10.16]</span>
+                <span class="paper-title">블렌디드 러닝을 활용한 방과후학교 피아노 프로그램 개발 및 효과</span>
+                <span class="paper-journal">(음악교육공학, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">14.</span>
+                <span class="paper-date">[2021.01.16]</span>
+                <span class="paper-title">협동학습 모형을 활용한 원격수업 음악과 프로그램 개발</span>
+                <span class="paper-journal">(음악교육공학, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">15.</span>
+                <span class="paper-date">[2020.04.16]</span>
+                <span class="paper-title">아츠프로펠을 활용한 음악과 프로그램 개발 및 적용이 중학생들의 음악적 흥미도, 자기효능감, 음악인지능력에 미치는 효과</span>
+                <span class="paper-journal">(음악교육공학, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">16.</span>
+                <span class="paper-date">[2016.09.20]</span>
+                <span class="paper-title">협동학습 수업모형을 활용한 문화예술교육 컵타 프로그램 개발 및 적용 효과</span>
+                <span class="paper-journal">(교육과정연구, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">17.</span>
+                <span class="paper-date">[2016.04.16]</span>
+                <span class="paper-title">음악 SW 학습을 활용한 아츠 프로펠 학습 프로그램 개발</span>
+                <span class="paper-journal">(음악교육공학, KCI)</span>
+            </li>
+            <li class="paper-item">
+                <span class="paper-num">18.</span>
+                <span class="paper-date">[2011.08.16]</span>
+                <span class="paper-title">디지털 매체를 활용한 창작학습 지도방안</span>
+                <span class="paper-journal">(음악교육공학, KCI)</span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>학술대회 발표 (Conference Presentations)</h2>
+        <ul class="exp-list">
+            <li>
+                <strong>2026. 06. 06 | CBAM 기반 초등교사의 인공지능 음악교육 관심도 분석 및 향후 방향</strong>
+                <span class="sub-text">한국음악교육공학회 춘계학술대회 (서경대학교)</span>
+            </li>
+            <li>
+                <strong>2025. 06. 28 | 예비교사 AIED 인식 함양 교육과정 설계 및 경험 탐구</strong>
+                <span class="sub-text">한국교육과정학회 춘계학술대회 (서울교육대학교)</span>
+            </li>
+            <li>
+                <strong>2024. 06. 29 | 메타버스 기반 교육과정의 예비교사 경험 탐구</strong>
+                <span class="sub-text">한국교육과정학회 춘계학술대회 (전남대학교)</span>
+            </li>
+            <li>
+                <strong>2023. 12. 15 | 백워드 모형을 활용한 에듀테크-메타버스 기반 예비교사 교육 프로그램 개발 및 적용</strong>
+                <span class="sub-text">한국교육과정학회 정기학술대회 (경북대학교)</span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>대표 저서 및 프로젝트</h2>
+        <ul class="exp-list">
+            <li><strong>[저서]</strong> 남상봉, 박현진 (2025. 08. 30). 《AI와 메타버스를 활용한 음악수업 프로그램》. 공동체.</li>
+            <li><strong>[프로젝트]</strong> AI·메타버스 기반 교육 플랫폼 '가락온(Garak-On)' 개발 및 연구</li>
+        </ul>
+    </section>
+
+    <footer>
+        © Park, Hyun Jin. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>
